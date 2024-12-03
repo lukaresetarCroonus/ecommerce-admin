@@ -1,0 +1,9 @@
+{
+  "description": "",
+  "module": "presentation",
+  "name": "Admin forme",
+  "submodules": [
+    { "slug": "info", "name": "Osnovne informacije", "description": "" },
+    { "slug": "fields", "name": "Login forma", "description": "" }
+  ]
+}

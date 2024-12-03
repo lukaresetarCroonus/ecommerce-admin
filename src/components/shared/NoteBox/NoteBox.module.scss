@@ -1,0 +1,12 @@
+@import "../../../variables.scss";
+
+.wrapper {
+    padding: 2rem;
+    width: auto;
+    border: 1px dashed $middleGrey;
+    background: $lightGrey;
+}
+
+.message:last-child {
+    margin: 0;
+}

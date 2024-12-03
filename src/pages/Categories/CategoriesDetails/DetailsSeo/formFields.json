@@ -1,0 +1,220 @@
+[
+    {
+        "field_name": "Država",
+        "prop_name": "id_country",
+        "in_main_table": false,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "select",
+        "options": [],
+        "fillFromApi": "admin/category-product/seo/ddl",
+        "usePropName": true
+    },
+    {
+        "field_name": "Država",
+        "prop_name": "country_name",
+        "in_main_table": true,
+        "in_details": false,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Jezik",
+        "prop_name": "lang",
+        "in_main_table": false,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "select",
+        "options": [],
+        "fillFromApi": "admin/category-product/seo/ddl",
+        "usePropName": true
+    },
+    {
+        "field_name": "Jezik",
+        "prop_name": "lang_name",
+        "in_main_table": true,
+        "in_details": false,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Slug",
+        "prop_name": "slug",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "Opisni deo URL-a.",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Meta naslov",
+        "prop_name": "meta_title",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "Naslov stranice koji će se prikazivati u pretraživačima i na kartici pretraživača. Optimalna dužina je do 60 karaktera.",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Meta ključne reči",
+        "prop_name": "meta_keywords",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "Ključne reči relevantne za sadržaj stranice.",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Meta opis",
+        "prop_name": "meta_description",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "Sažetak sadržaja stranice koji se prikazuje ispod naslova stranice u rezultatima pretraživača. Optimalna dužina je do 160 karaktera.",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "textarea"
+    },
+    {
+        "field_name": "Canonical link",
+        "prop_name": "meta_canonical_link",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "Ukoliko je postojeća stranica kopija neke strane koja već postoji, originalni URL uneti ovde.",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Dozvoli search engine robotima da indeksiraju sadržaj? (Robot: index)",
+        "prop_name": "meta_robots_index",
+        "in_main_table": false,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "switch"
+    },
+    {
+        "field_name": "Da li search engine roboti da prate linkovani sadržaj? (Robot: follow)",
+        "prop_name": "meta_robots_follow",
+        "in_main_table": false,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "switch"
+    },
+    {
+        "field_name": "Naslov za društvene mreže",
+        "prop_name": "social_share_title",
+        "in_main_table": false,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "Naslov koji će se prikazati kada se sadržaj podeli na društvenim mrežama. Ukoliko je polje prazno uzima se vrednost iz polja Meta naslov. Optimalna dužina je između 60 i 90 karaktera. Ukoliko je duži opis maksimalno do 100 karaktera, Facebook prihvata maksimalno 88 karaktera.",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Opis za društvene mreže",
+        "prop_name": "social_share_description",
+        "in_main_table": false,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "Opis koji će se prikazati kada se sadržaj podeli na društvenim mrežama. Ukoliko je polje prazno uzima se vrednost iz polja Meta opis. Optimalna dužina je do 200 karaktera.",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "textarea"
+    },
+    {
+        "field_name": "Slika za društvene mreže",
+        "prop_name": "social_share_image",
+        "validate": {
+            "imageUpload": null
+        },
+        "in_main_table": false,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "Slika koji će se prikazati kada se sadržaj podeli na društvenim mrežama. Ukoliko je polje prazno uzima definisanu sliku proizvoda.",
+        "ui_prop": {
+            "fileUpload": {
+                "fillFromApi": "admin/category-product/seo/options/upload",
+                "allow_format": [],
+                "allow_size": "",
+                "image": {
+                    "convert_use": null,
+                    "width": "1600",
+                    "height": "900"
+                },
+                "imageButton": {
+                    "apiPathCrop": "admin/category-product/seo/options/crop"
+                }
+            }
+        },
+        "sortable": true,
+        "input_type": "image_button"
+    },
+    {
+        "field_name": "",
+        "prop_name": "action",
+        "in_main_table": true,
+        "in_details": false,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "edit_delete"
+    }
+]

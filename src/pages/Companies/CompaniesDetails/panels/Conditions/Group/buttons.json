@@ -1,0 +1,10 @@
+[
+  {
+    "id": "customer",
+    "name": "Kupac"
+  },
+  {
+    "id": "cart_summary",
+    "name": "Iznos korpe"
+  }
+]

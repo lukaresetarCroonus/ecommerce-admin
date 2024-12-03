@@ -1,0 +1,24 @@
+@import "../../../../variables.scss";
+
+.imageStyle {
+    max-width: fit-content;
+    max-height: auto;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.labelStyle {
+    font-weight: bold;
+}
+
+.btnGroup {
+    margin: 1rem;
+}
+
+.formFieldsStyle * {
+    margin: 0.2rem !important;
+}
+
+.imageStyle img {
+    border: 3px solid #bbdefb;
+}

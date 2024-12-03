@@ -1,0 +1,16 @@
+@import "../../../../../variables.scss";
+
+.showAllCheckedSearch {
+    display: flex;
+    align-items: center;
+    input {
+        border: 0;
+        border-bottom: 1px solid $lightGrey2;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 16px;
+        &:focus-visible {
+            outline-offset: 0;
+            outline: none;
+        }
+    }
+}

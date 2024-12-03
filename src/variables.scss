@@ -1,0 +1,20 @@
+$white: #ffffff;
+$black: #000000;
+$lightGreen: #42b732;
+$darkGreen: #225f43;
+$middleGrey: #989898;
+$lightGrey: #ecf0fa;
+$lightBlue: #17a2b8;
+$blue: #bbdefb;
+$red: #f50057;
+$theme: #28a86e;
+$danger: #d32f2f;
+$lightGrey2: #e0e0e0;
+$petroleum: #17a2b9;
+
+$gap: 0.5em;
+
+:export {
+    gap: $gap;
+    theme: $theme;
+}

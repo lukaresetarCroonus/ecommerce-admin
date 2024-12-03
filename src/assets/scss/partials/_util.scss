@@ -1,0 +1,23 @@
+@import "../../../variables";
+
+.clickable { cursor: pointer; }
+.wide { width: 100%; }
+
+.no-padding { padding: 0 !important; }
+.no-margin { margin: 0 !important; }
+
+.m { margin: $gap;}
+.mv { margin-top: $gap; margin-bottom: $gap;}
+.mv { margin-left: $gap; margin-right: $gap;}
+.mt { margin-top: $gap; }
+.mr { margin-right: $gap; }
+.mb { margin-bottom: $gap; }
+.ml { margin-left: $gap; }
+
+.p { padding: $gap;}
+.pv { padding-top: $gap; padding-bottom: $gap;}
+.pv { padding-left: $gap; padding-right: $gap;}
+.pt { padding-top: $gap; }
+.pr { padding-right: $gap; }
+.pb { padding-bottom: $gap; }
+.pl { padding-left: $gap; }

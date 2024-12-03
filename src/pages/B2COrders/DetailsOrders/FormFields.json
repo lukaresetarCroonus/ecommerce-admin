@@ -1,0 +1,18 @@
+[
+    {
+        "field_name": "Status narudžbenice",
+        "prop_name": "status",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": "",
+        "sortable": false,
+        "input_type": "select",
+        "options": [],
+        "fillFromApi": "",
+        "usePropName": true
+    }
+]

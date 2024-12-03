@@ -1,0 +1,322 @@
+image: node:18.19.0
+
+definitions:
+  services:
+    docker:
+      memory: 3072
+  steps:
+    - step: &execute
+        name: Staging
+        deployment: staging
+        trigger: automatic
+        services:
+          - docker
+        caches:
+          - docker
+        script:
+          #- ./deploy/deploy_status.sh ${BITBUCKET_DEPLOYMENT_ENVIRONMENT} "pocetak" - slanje na url status da bi mogli da napravimo konzolu aplikaciju da sama radi update
+
+          - export IMAGE=$DOCKER_ACCOUNT/$DOCKER_IMAGE
+          - printf "\nDeploy\n    env  $BITBUCKET_DEPLOYMENT_ENVIRONMENT\n    img  $IMAGE\n\nServer\n    host $SERVER_HOST\n    port $SERVER_PORT\n    user $SERVER_USER\n\nApp\n    port $PORT\n    url  $API_URL\n";
+
+          # Build the image
+          - docker build --build-arg API_URL=$API_URL -t $IMAGE .
+          - docker tag $IMAGE $IMAGE:latest
+
+          # Push the image
+          - docker login --username $DOCKER_ACCOUNT --password $DOCKER_PASSWORD
+          - docker push $IMAGE:latest
+
+          # Deploy on the server
+          - export DEPLOY="deploy-$DOCKER_IMAGE-$BITBUCKET_DEPLOYMENT_ENVIRONMENT-$RANDOM.sh"
+          - scp -o StrictHostKeyChecking=no -P ${SERVER_PORT} deploy/deploy.sh $SERVER_USER@$SERVER_HOST:$DEPLOY
+          - ssh -o StrictHostKeyChecking=no -p ${SERVER_PORT}                  $SERVER_USER@$SERVER_HOST "
+                    DOCKER_ACCOUNT='${DOCKER_ACCOUNT}'
+                    DOCKER_IMAGE='${DOCKER_IMAGE}'
+                    PROJECT='${BITBUCKET_DEPLOYMENT_ENVIRONMENT}'
+                    PORT='${PORT}'
+                \"./$DEPLOY\" &&
+                rm \"$DEPLOY\""
+        #after-script:
+          #- ./deploy/deploy_status.sh ${BITBUCKET_DEPLOYMENT_ENVIRONMENT} ${BITBUCKET_EXIT_CODE} - slanje na url status da bi mogli da napravimo konzolu aplikaciju da sama radi update
+
+pipelines:
+  branches:
+    master:
+      - step: *execute
+
+    demo:
+      - step:
+          <<: *execute
+          name: Demo
+          deployment: demo
+
+    prod-stojic:
+      - step:
+          <<: *execute
+          name: Stojić
+          deployment: stojic
+
+    prod-lastva:
+      - step:
+          <<: *execute
+          name: Lastva
+          deployment: Lastva
+
+    prod-reflekta:
+      - step:
+          <<: *execute
+          name: Reflekta
+          deployment: reflekta
+
+    prod-akt:
+      - step:
+          <<: *execute
+          name: Akt
+          deployment: akt
+    
+    prod-maximon:
+      - step:
+          <<: *execute
+          name: Maximon
+          deployment: maximon
+                    
+    prod-tiffany:
+      - step:
+          <<: *execute
+          name: Tiffany
+          deployment: tiffany
+                              
+    prod-zenit:
+      - step:
+          <<: *execute
+          name: Zenit
+          deployment: zenit
+
+    prod-nimaco:
+      - step:
+          <<: *execute
+          name: Nimaco
+          deployment: nimaco
+
+    prod-timcards:
+      - step:
+          <<: *execute
+          name: Timcards
+          deployment: timcards
+
+    prod-kruska:
+      - step:
+          <<: *execute
+          name: Kruska
+          deployment: kruska
+
+    prod-lucani:
+      - step:
+          <<: *execute
+          name: Lucani
+          deployment: lucani
+
+    prod-heklanisvet:
+      - step:
+          <<: *execute
+          name: HeklaniSvet
+          deployment: heklanisvet
+                    
+    prod-karat:
+      - step:
+          <<: *execute
+          name: Karat
+          deployment: karat
+                    
+    prod-whollywear:
+      - step:
+          <<: *execute
+          name: WhollyWear
+          deployment: whollywear
+                              
+    prod-adnetics:
+      - step:
+          <<: *execute
+          name: Adnetics
+          deployment: adnetics
+
+    prod-agropremium:
+      - step:
+          <<: *execute
+          name: AgroPremium
+          deployment: agropremium
+                                                
+    prod-elestra:
+      - step:
+          <<: *execute
+          name: Elestra
+          deployment: elestra
+                                                
+    prod-velvet:
+      - step:
+          <<: *execute
+          name: Velvet
+          deployment: velvet
+                                                
+    prod-klimatrade:
+      - step:
+          <<: *execute
+          name: KlimaTrade
+          deployment: klimatrade
+                                                
+    prod-migservis:
+      - step:
+          <<: *execute
+          name: MigServis
+          deployment: migservis
+                                                
+    prod-ristictrade:
+      - step:
+          <<: *execute
+          name: RisticTrade
+          deployment: ristictrade
+                                     
+    prod-raika:
+      - step:
+          <<: *execute
+          name: Raika
+          deployment: raika
+                                     
+    prod-psihum:
+      - step:
+          <<: *execute
+          name: Psihum
+          deployment: psihum
+                                                                   
+    prod-helivez:
+      - step:
+          <<: *execute
+          name: HeliVez
+          deployment: helivez
+                                                                   
+    prod-orginaltd:
+      - step:
+          <<: *execute
+          name: OrginalTd
+          deployment: orginaltd
+                                                                   
+    prod-rover:
+      - step:
+          <<: *execute
+          name: Rover
+          deployment: rover
+                                                                             
+    prod-zlataranova:
+      - step:
+          <<: *execute
+          name: ZlataraNova
+          deployment: zlataranova
+                                                                             
+    prod-absolem:
+      - step:
+          <<: *execute
+          name: Absolem
+          deployment: absolem
+
+    prod-winea:
+      - step:
+          <<: *execute
+          name: Winea
+          deployment: winea
+
+    prod-agscustom:
+      - step:
+          <<: *execute
+          name: AGSCustom
+          deployment: agscustom
+
+    prod-fashiondemo:
+      - step:
+          <<: *execute
+          name: FashionDemo
+          deployment: fashiondemo
+
+    prod-itlalupvc:
+      - step:
+          <<: *execute
+          name: ITLAluPvc
+          deployment: itlalupvc
+
+    prod-janagio:
+      - step:
+          <<: *execute
+          name: Janagio
+          deployment: janagio
+
+    prod-croonus:
+      - step:
+          <<: *execute
+          name: Croonus
+          deployment: croonus
+
+    prod-alphamob:
+      - step:
+          <<: *execute
+          name: AlphaMob
+          deployment: alphamob
+
+    prod-londessa:
+        - step:
+              <<: *execute
+              name: Londessa
+              deployment: londessa
+
+    prod-bojanvukadinov:
+        - step:
+              <<: *execute
+              name: BojanVukadinov
+              deployment: bojanvukadinov
+
+    prod-onlineumetnickaskola:
+        - step:
+              <<: *execute
+              name: OnlineUmetnickaSkola
+              deployment: onlineumetnickaskola
+
+    prod-dragacevkazlatna:
+        - step:
+              <<: *execute
+              name: DragacevkaZlatna
+              deployment: dragacevkazlatna
+
+    prod-hobbrandgroup:
+        - step:
+              <<: *execute
+              name: HOBBrandGroup
+              deployment: hobbrandgroup
+
+    prod-tiedup:
+        - step:
+              <<: *execute
+              name: TiedUp
+              deployment: tiedup
+
+    prod-alesari:
+        - step:
+              <<: *execute
+              name: Alesari
+              deployment: alesari
+
+    prod-solarnarevolucija:
+        - step:
+              <<: *execute
+              name: SolarnaRevolucija
+              deployment: solarnarevolucija
+
+    prod-bogutovo:
+        - step:
+              <<: *execute
+              name: Bogutovo
+              deployment: bogutovo
+
+    prod-sovaprintfactory:
+        - step:
+              <<: *execute
+              name: SovaPrintFactory
+              deployment: sovaprintfactory

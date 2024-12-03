@@ -1,0 +1,10 @@
+[
+  {
+    "id": "product",
+    "name": "Proizvod"
+  },
+  {
+    "id": "customer",
+    "name": "Kupac"
+  }
+]

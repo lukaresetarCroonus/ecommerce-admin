@@ -1,0 +1,47 @@
+@import "../../../variables.scss";
+
+.modalStyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background-color: $white;
+    // bgcolor: "background.paper",
+    border: 2px solid $lightGrey;
+    box-shadow: 24;
+    padding: 3rem;
+}
+
+.imageStyle {
+    max-width: fit-content;
+    max-height: auto;
+    margin: auto;
+
+    padding: 0.5rem;
+}
+
+.labelStyle {
+    font-weight: bold;
+}
+
+.btnGroup {
+    margin: 1rem;
+}
+
+.imageHolder {
+    display: flex;
+    gap: 5rem;
+}
+
+.formFieldsStyle * {
+    margin: 0.2rem !important;
+}
+
+.formFieldsStyle {
+    max-width: 600px;
+}
+
+.imageStyle img {
+    border: 3px solid #bbdefb;
+}

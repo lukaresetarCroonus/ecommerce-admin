@@ -1,0 +1,32 @@
+[
+    {
+        "field_name": "Galerija",
+        "prop_name": "gallery",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "fileUpload": {
+                "allow_format": [],
+                "allow_size": "",
+                "image": {
+                    "convert_use": null,
+                    "width": "1920",
+                    "height": "1080"
+                },
+                "imageButton": {
+                    "apiPathCrop": "admin/product-items/variants/gallery/options/crop"
+                }
+            }
+        },
+        "sortable": true,
+        "input_type": "multiple_images_one",
+        "validate": {
+            "imageUpload": null
+        },
+        "additionalData": null
+    }
+]

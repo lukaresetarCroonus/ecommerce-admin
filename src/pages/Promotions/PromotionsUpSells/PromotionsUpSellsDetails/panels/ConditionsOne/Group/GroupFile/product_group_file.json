@@ -1,0 +1,28 @@
+{
+  "type": "group",
+  "type_component": "product",
+  "fields": [
+    {
+      "field": "entity_group",
+      "selected": {
+        "id": "product",
+        "name": "product"
+      }
+    },
+    {
+      "field": "condition",
+      "selected": {
+        "id": "and",
+        "name": "SVI"
+      }
+    },
+    {
+      "field": "value",
+      "selected": {
+        "id": "true",
+        "name": "TAČNO"
+      }
+    }
+  ],
+  "rules": []
+}

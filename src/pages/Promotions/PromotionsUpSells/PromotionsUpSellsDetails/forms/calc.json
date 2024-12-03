@@ -1,0 +1,47 @@
+[
+  {
+    "field_name": "Način obračuna popusta",
+    "prop_name": "discount_type",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "select",
+    "options": [],
+    "fillFromApi": "admin/campaigns/cart-delivery/calculations/ddl",
+    "usePropName": true
+  },
+  {
+    "field_name": "Iznos popusta",
+    "prop_name": "discount_value",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "number"
+  },
+  {
+    "field_name": "Oznaka iznosa",
+    "prop_name": "currency",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "select",
+    "options": [],
+    "fillFromApi": "admin/campaigns/cart-delivery/calculations/ddl",
+    "usePropName": true
+  }
+]

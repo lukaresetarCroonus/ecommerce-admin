@@ -1,0 +1,28 @@
+{
+  "type": "group",
+  "type_component": "cart_delivery",
+  "fields": [
+    {
+      "field": "entity_group",
+      "selected": {
+        "id": "cart_delivery",
+        "name": "cart_delivery"
+      }
+    },
+    {
+      "field": "condition",
+      "selected": {
+        "id": "and",
+        "name": "SVI"
+      }
+    },
+    {
+      "field": "value",
+      "selected": {
+        "id": "true",
+        "name": "TAČNO"
+      }
+    }
+  ],
+  "rules": []
+}

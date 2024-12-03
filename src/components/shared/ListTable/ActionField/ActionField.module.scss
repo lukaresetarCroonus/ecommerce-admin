@@ -1,0 +1,43 @@
+@import "../../../../variables.scss";
+
+.wrapper {
+    display: flex;
+    justify-content: left;
+    margin: 3px 0 -3px;
+    gap: $gap;
+}
+
+.button {
+    color: var(--light-silver);
+    cursor: pointer;
+
+    :hover {
+        color: $theme;
+    }
+
+    span {
+        transition: 0.3s;
+    }
+}
+
+// The following is per field type
+
+.delete {
+    :hover {
+        color: $danger !important;
+    }
+    order: 9999;
+}
+
+.icon {
+    color: var(--light-silver);
+    cursor: pointer;
+
+    :hover {
+        color: $theme;
+    }
+
+    span {
+        transition: 0.3s;
+    }
+}

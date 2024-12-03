@@ -1,0 +1,22 @@
+{
+  "id": null,
+  "type": "group",
+  "type_component": "default",
+  "fields": [
+    {
+      "field": "condition",
+      "selected": {
+        "id": "and",
+        "name": "SVI"
+      }
+    },
+    {
+      "field": "value",
+      "selected": {
+        "id": "true",
+        "name": "TAČNO"
+      }
+    }
+  ],
+  "rules": []
+}

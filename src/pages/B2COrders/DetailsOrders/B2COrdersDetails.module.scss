@@ -1,0 +1,141 @@
+@import "../../../variables.scss";
+
+.orderData {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.orderSectionTitle {
+    font-weight: 500;
+    padding: 0.5rem;
+    font-size: 17px;
+    background-color: $lightGrey;
+    border-radius: 0.25rem;
+}
+
+.orderSectionBody {
+    padding: 0.8rem 0.5rem;
+}
+
+.orderSection {
+    width: 100%;
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+}
+
+.orderSection50 {
+    width: 50%;
+}
+
+.orderDataSection {
+    display: flex;
+    gap: 2rem;
+}
+
+.orderDataDisplay {
+    width: 50%;
+}
+
+.priceRow {
+    display: flex;
+    justify-content: space-between;
+    color: $middleGrey;
+    font-size: 0.875rem;
+}
+
+.totalPriceRow {
+    display: flex;
+    justify-content: space-between;
+    color: $black;
+}
+
+.priceValue {
+    font-weight: 600;
+}
+
+.dataLabel {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.productCell {
+    font-weight: 600 !important;
+}
+
+.productCellLink {
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: #28a86e;
+    }
+}
+
+.chatBox {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #ecf0fa5c;
+    word-break: break-word;
+    border-radius: 0.25rem;
+    flex-direction: column;
+    min-height: auto;
+    font-size: 0.875rem;
+    // margin-left: 0.5rem;
+}
+
+.createdAt {
+    font-size: 0.55rem;
+}
+
+// RESPONSIVE
+
+@media (max-width: 1536px) {
+    .orderSection50 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .orderDataSection {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .orderDupPrt {
+        display: none !important;
+    }
+}
+
+@media print {
+    .print {
+        display: flex !important;
+    }
+    .orderDupPrt {
+        display: none !important;
+    }
+    .orderDataSection {
+        gap: 1rem !important;
+    }
+    .orderDataDisplay {
+        width: 100% !important;
+        p {
+            font-size: 1.2rem !important;
+            margin-bottom: 0.3rem !important;
+        }
+    }
+    .orderSectionTitle {
+        font-size: 1.2rem !important;
+    }
+    .productCell,
+    .priceRow,
+    .tableHeadCell {
+        font-size: 1rem !important;
+    }
+
+    .priceRow span {
+        font-size: 1.2rem !important;
+    }
+}

@@ -1,0 +1,41 @@
+@import "../../../../../../../variables.scss";
+
+.rowHolder {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    &:not(:last-child) {
+        margin-bottom: 0.8rem;
+    }
+
+    div {
+        width: 10rem;
+        .inputSelect {
+            font-size: 0.875rem;
+            padding: 0;
+
+            div {
+                padding: 0;
+            }
+
+            fieldset {
+                border: 0;
+                border-bottom: 1px solid rgba($black, 0.2);
+                border-radius: 0;
+            }
+        }
+    }
+
+    p {
+        display: none;
+    }
+
+    .removeRow {
+        color: var(--light-silver);
+        margin-left: auto;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: $danger;
+        }
+    }
+}

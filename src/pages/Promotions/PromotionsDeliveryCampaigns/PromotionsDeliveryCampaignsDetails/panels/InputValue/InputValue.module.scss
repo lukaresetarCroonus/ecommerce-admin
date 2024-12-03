@@ -1,0 +1,15 @@
+@import "../../../../../../variables.scss";
+
+.valueIcon {
+    display: flex;
+    align-items: center;
+    input {
+        padding: 0.2rem 0.5rem !important;
+        padding: 0.2rem 0.5rem;
+    }
+    div {
+        margin: 0;
+        min-width: 15rem;
+        font-size: 0.875rem;
+    }
+}

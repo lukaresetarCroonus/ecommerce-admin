@@ -1,0 +1,129 @@
+[
+    {
+        "field_name": "Naziv",
+        "prop_name": "name",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Kratak opis",
+        "prop_name": "short_description",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "textarea"
+    },
+    {
+        "field_name": "Opis",
+        "prop_name": "description",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "html_editor"
+    },
+    {
+        "field_name": "Ikonica",
+        "prop_name": "icon",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "fileUpload": {
+                "fillFromApi": "admin/news-b2c/category/basic-data/options/upload?field=icon",
+                "allow_format": [],
+                "allow_size": "",
+                "image": {
+                    "convert_use": null,
+                    "width": "1920",
+                    "height": "1080"
+                },
+                "imageButton": {
+                    "apiPathCrop": "admin/news-b2c/category/basic-data/options/crop?field=icon"
+                }
+            }
+        },
+        "sortable": true,
+        "input_type": "image_button"
+    },
+    {
+        "field_name": "Slika",
+        "prop_name": "image",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "fileUpload": {
+                "fillFromApi": "admin/news-b2c/category/basic-data/options/upload?field=image",
+                "allow_format": [],
+                "allow_size": "",
+                "image": {
+                    "convert_use": null,
+                    "width": "1920",
+                    "height": "1080"
+                },
+                "imageButton": {
+                    "apiPathCrop": "admin/news-b2c/category/basic-data/options/crop?field=image"
+                }
+            },
+
+            "eventHandler": {}
+        },
+        "sortable": true,
+        "input_type": "image_button"
+    },
+    {
+        "field_name": "Roditelj",
+        "prop_name": "parent_id",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "select",
+        "options": [],
+        "fillFromApi": "admin/news-b2c/category/basic-data/ddl",
+        "usePropName": true
+    },
+    {
+        "field_name": "Status",
+        "prop_name": "status",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "select",
+        "fillFromApi": "admin/news-b2c/category/basic-data/ddl",
+        "usePropName": true,
+        "options": []
+    }
+]

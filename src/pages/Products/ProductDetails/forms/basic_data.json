@@ -1,0 +1,302 @@
+[
+    {
+        "field_name": "Ime",
+        "prop_name": "name",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 6,
+                "xl": 6
+            }
+        },
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Šifra",
+        "prop_name": "sku",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 6,
+                "xl": 6
+            }
+        },
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Barcode",
+        "prop_name": "barcode",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 6,
+                "xl": 6
+            }
+        },
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Status",
+        "prop_name": "status",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 3,
+                "xl": 3
+            }
+        },
+        "sortable": true,
+        "input_type": "select",
+        "fillFromApi": "admin/product-items/basic-data/ddl",
+        "usePropName": true,
+        "options": []
+    },
+    {
+        "field_name": "Pozicija",
+        "prop_name": "order",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 3,
+                "xl": 3
+            }
+        },
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Prikaz artikla na B2B",
+        "prop_name": "b2b_active",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 3,
+                "xl": 3
+            }
+        },
+        "sortable": true,
+        "input_type": "switch"
+    },
+    {
+        "field_name": "Prikaz artikla na B2C",
+        "prop_name": "b2c_active",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 3,
+                "xl": 3
+            }
+        },
+        "sortable": true,
+        "input_type": "switch"
+    },
+    {
+        "field_name": "Novo",
+        "prop_name": "new",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 3,
+                "xl": 3
+            }
+        },
+        "sortable": true,
+        "input_type": "switch"
+    },
+    {
+        "field_name": "Digitalni proizvod",
+        "prop_name": "is_digital",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 3,
+                "xl": 3
+            }
+        },
+        "sortable": true,
+        "input_type": "switch"
+    },
+    {
+        "field_name": "Novo od",
+        "prop_name": "new_from",
+        "in_main_table": true,
+        "in_details": false,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6,
+                "xl": 6
+            }
+        },
+        "sortable": true,
+        "input_type": "date_time"
+    },
+    {
+        "field_name": "Novo do",
+        "prop_name": "new_to",
+        "in_main_table": true,
+        "in_details": false,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6,
+                "xl": 6
+            }
+        },
+        "sortable": true,
+        "input_type": "date_time"
+    },
+    {
+        "field_name": "Vrsta proizvoda",
+        "prop_name": "digital_type",
+        "in_main_table": true,
+        "in_details": false,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 12,
+                "sm": 12,
+                "md": 12,
+                "lg": 12,
+                "xl": 12
+            }
+        },
+        "sortable": true,
+        "input_type": "select",
+        "fillFromApi": "admin/product-items/basic-data/ddl",
+        "usePropName": true,
+        "options": []
+    },
+    {
+        "field_name": "Iskoristiti od",
+        "prop_name": "using_from",
+        "in_main_table": true,
+        "in_details": false,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6,
+                "xl": 6
+            }
+        },
+        "sortable": true,
+        "input_type": "date_time"
+    },
+    {
+        "field_name": "Iskoristiti do",
+        "prop_name": "using_to",
+        "in_main_table": true,
+        "in_details": false,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "columns": {
+                "xs": 6,
+                "sm": 6,
+                "md": 6,
+                "lg": 6,
+                "xl": 6
+            }
+        },
+        "sortable": true,
+        "input_type": "date_time"
+    }
+]

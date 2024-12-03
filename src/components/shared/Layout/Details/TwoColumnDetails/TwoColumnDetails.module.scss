@@ -1,0 +1,11 @@
+@import "../../../../../variables.scss";
+
+.saveButton {
+  background-color: $lightGreen !important;
+  margin: 2rem 0 2rem 53% !important;
+}
+
+.saveButton:hover {
+  background-color: $lightGrey !important;
+  color: $black;
+}

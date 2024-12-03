@@ -1,0 +1,93 @@
+[
+  {
+    "field_name": "Module",
+    "prop_name": "module",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": false,
+    "input_type": "input"
+  },
+  {
+    "field_name": "Submodule",
+    "prop_name": "submodule",
+    "in_main_table": false,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": false,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": false,
+    "input_type": "input"
+  },
+  {
+    "field_name": "Slug",
+    "prop_name": "slug",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "input"
+  },
+  {
+    "field_name": "Pozicija na glavnoj strani",
+    "prop_name": "",
+    "in_main_table": false,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": false,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "input"
+  },
+  {
+    "field_name": "Opis",
+    "prop_name": "description",
+    "in_main_table": false,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": false,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "textarea"
+  },
+  {
+    "field_name": "Metod",
+    "prop_name": "method",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "input"
+  },
+  {
+    "field_name": "",
+    "prop_name": "action",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "edit_delete"
+  }
+]

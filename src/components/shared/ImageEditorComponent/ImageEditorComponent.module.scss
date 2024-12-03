@@ -1,0 +1,25 @@
+.btnGroup {
+    margin-left: 0rem;
+    margin-top: 2rem !important;
+    position: absolute;
+    bottom: 2rem;
+    left: 60%;
+    width: 90% !important;
+    transform: translateX(-61%);
+    // height: 40px;
+    // display: flex;
+    align-items: left;
+
+    // input::-webkit-slider-runnable-track {
+    //     background-color: var(--sidebar-bg-color);
+    // }
+}
+
+.cropContainer {
+    position: absolute;
+    margin-top: 5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 12rem;
+}

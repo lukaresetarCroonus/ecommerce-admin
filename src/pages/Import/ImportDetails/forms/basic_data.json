@@ -1,0 +1,49 @@
+[
+  {
+    "field_name": "Tip importa",
+    "prop_name": "import_type",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "select",
+    "fillFromApi": "admin/import/basic-data/ddl",
+    "usePropName": true,
+    "options": []
+  },
+  {
+    "field_name": "Ponašanje importa",
+    "prop_name": "import_options",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "select",
+    "options": [],
+    "fillFromApi": "admin/import/basic-data/ddl",
+    "usePropName": true
+  },
+  {
+    "field_name": "Import",
+    "prop_name": "import",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "import_picker",
+    "picker_message": "",
+    "options": []
+  }
+]

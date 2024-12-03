@@ -1,0 +1,53 @@
+{
+  "id": null,
+  "type": "row",
+  "type_component": "cart_summary",
+  "fields": [
+    {
+      "field": "entity_group",
+      "selected": {
+        "id": "cart_summary",
+        "name": "cart_summary"
+      }
+    },
+    {
+      "field": "entity",
+      "selected": {
+        "id": 0,
+        "name": 0
+      }
+    },
+    {
+      "field": "group",
+      "selected": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "field": "field",
+      "selected": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "field": "condition",
+      "selected": {
+        "id": null,
+        "name": null,
+        "props": {
+          "component": null,
+          "input_type": null,
+          "query_tbl": null,
+          "query_col": null
+        }
+      }
+    },
+    {
+      "field": "value",
+      "selected": null
+    }
+  ],
+  "rules": []
+}

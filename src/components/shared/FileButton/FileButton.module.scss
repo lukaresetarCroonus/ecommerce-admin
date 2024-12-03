@@ -1,0 +1,103 @@
+@import "../../../variables.scss";
+
+.formStyle {
+  margin-top: 2rem !important;
+}
+
+.imageButtonStyled {
+  position: relative;
+  height: 10rem;
+  width: 35rem !important;
+}
+
+.imageButtonStyled:hover {
+  z-index: 1 !important;
+  opacity: 1 !important;
+  background-color: $white !important;
+
+  .imageBackdrop {
+    opacity: 0.15 !important;
+  }
+
+  .imageMarked {
+    opacity: 0 !important;
+  }
+
+  .typographyStyle {
+    border: 4px solid #fff;
+  }
+}
+
+.imageBackdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.4 !important;
+}
+
+.imageWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.imageMarked {
+  height: 0.2rem;
+  width: 2rem;
+  background-color: #fff !important;
+  position: absolute;
+  bottom: -0.3rem;
+  left: calc(50% - 1rem);
+}
+
+// Image Upload start
+
+.buttonStyle {
+  background-color: $lightGrey !important;
+  width: 33rem !important;
+  height: 10rem;
+}
+
+.buttonStyle:hover {
+  background-color: $lightGreen !important;
+  opacity: 0.9, 0.8, 0.7;
+}
+
+.boxStyle {
+  width: 100;
+  height: 100;
+  font-size: 1rem;
+}
+
+.imageOutlinedIcon {
+  font-size: 6rem !important;
+}
+
+.visibilityOutlinedIcon {
+  color: $white !important;
+}
+
+.avatarBoxStyle {
+  display: flex;
+  align-items: center;
+  margin: 0.2rem;
+  position: relative;
+}
+
+.loadingImage {
+  color: $lightGreen !important;
+  position: absolute;
+  top: 0 !important;
+  left: 50%;
+  margin-left: -4em;
+  z-index: 1 !important;
+}

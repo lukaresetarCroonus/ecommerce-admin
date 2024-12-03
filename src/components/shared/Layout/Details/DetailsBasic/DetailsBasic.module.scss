@@ -1,0 +1,54 @@
+@import "../../../../../variables.scss";
+
+.buttonBack {
+  position: absolute !important;
+  right: 0 !important;
+  top: 9rem !important;
+  margin-right: 5rem !important;
+  margin-top: 0rem !important;
+  padding: 0.8rem 1.5rem !important;
+  background-color: $lightGrey !important;
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  color: $black !important;
+  i {
+    transform: rotate(90deg);
+    margin-right: 10px;
+  }
+}
+
+.buttonBack:hover {
+  background-color: $lightGrey !important;
+  color: $black !important;
+  cursor: pointer !important;
+}
+
+.titleStyle {
+  margin-top: 3rem !important;
+  display: inline;
+}
+
+.main {
+  margin-top: 6rem !important;
+}
+.list {
+  & > ul {
+    & > div {
+      &:first-child {
+        margin: 5rem 1rem;
+        overflow: visible;
+        white-space: nowrap;
+      }
+    }
+    li {
+      background-color: var(--main-bg-color);
+      &:hover {
+        background-color: var(--main-color);
+        color: white;
+      }
+      &.Mui-selected {
+        background-color: var(--main-color);
+      }
+    }
+  }
+}

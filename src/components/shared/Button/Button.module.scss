@@ -1,0 +1,13 @@
+@import "../../../variables.scss";
+
+.button {
+    min-width: 11.23em !important;
+}
+
+.icon {
+    margin: 0 0.4em 0 -0.5em;
+}
+
+.pointerEvents {
+    pointer-events: inherit !important;
+}

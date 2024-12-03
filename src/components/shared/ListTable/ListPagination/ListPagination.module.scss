@@ -1,0 +1,20 @@
+@import "../../../../variables.scss";
+
+.pagination {
+    margin-top: 2em;
+    align-items: center;
+
+    ul {
+        li {
+            button {
+                color: rgba(0, 0, 0, 0.63);
+            }
+        }
+    }
+}
+
+.paginationLabel {
+    color: rgba(0, 0, 0, 0.63);
+    padding-bottom: 0.5em;
+    font-size: 0.875rem !important;
+}

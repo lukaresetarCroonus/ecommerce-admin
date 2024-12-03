@@ -1,0 +1,21 @@
+@import "../../../../variables.scss";
+
+.imageStyle {
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+    border: 3px solid $blue;
+    padding: 0.5rem;
+}
+
+.labelStyle {
+    font-weight: bold;
+}
+
+.btnGroup {
+    margin: 1rem;
+}
+
+.formFieldsStyle * {
+    margin: 0.2rem !important;
+}

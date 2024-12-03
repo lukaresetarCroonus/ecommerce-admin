@@ -1,0 +1,18 @@
+@import "../../../variables.scss";
+
+.toolBarStyle {
+  text-align: left;
+}
+
+.toolbarButtons {
+  display: flex;
+  gap: $gap;
+}
+
+.formStyle {
+  display: flex !important;
+}
+
+.formControl {
+  margin: 1rem !important;
+}

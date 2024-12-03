@@ -1,0 +1,14 @@
+[
+    {
+        "id": "products",
+        "name": "Proizvodi"
+    },
+    {
+        "id": "categories",
+        "name": "Kategorije"
+    },
+    {
+        "id": "brands",
+        "name": "Brendovi"
+    }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "field_name": "Email:",
+    "prop_name": "email",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": {
+      "wrapper_props": {
+        "custom_sx": {
+          ".MuiFormLabel-asterisk": {
+            "visibility": "hidden"
+          },
+          ".MuiFormLabel-root": {
+            "marginBottom": "0.188rem"
+          }
+        }
+      },
+      "component_props": {
+        "custom_sx": {
+          ".MuiOutlinedInput-notchedOutline": {
+            "border": "0"
+          },
+          ".MuiInputBase-input": {
+            "backgroundColor": "#e8f0fe",
+            "padding": "0.7rem"
+          }
+        }
+      }
+    },
+    "sortable": true,
+    "input_type": "input"
+  },
+  {
+    "field_name": "Lozinka:",
+    "prop_name": "password",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "",
+    "ui_prop": {
+      "wrapper_props": {
+        "custom_sx": {
+          ".MuiFormLabel-asterisk": {
+            "visibility": "hidden"
+          },
+          ".MuiFormLabel-root": {
+            "marginBottom": "0.188rem"
+          }
+        }
+      },
+      "component_props": {
+        "custom_sx": {
+          ".MuiOutlinedInput-notchedOutline": {
+            "border": "0"
+          },
+          ".MuiInputBase-input": {
+            "backgroundColor": "#e8f0fe",
+            "padding": "0.7rem"
+          }
+        }
+      }
+    },
+    "sortable": false,
+    "input_type": "password"
+  }
+]

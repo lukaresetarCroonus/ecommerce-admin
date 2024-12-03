@@ -1,0 +1,62 @@
+@import "../../../variables.scss";
+
+.formStyle {
+    margin: 0.7rem !important;
+}
+
+.buttonStyle {
+    background-color: $lightGrey  !important;
+    width: 90% !important;
+}
+
+.buttonStyle:hover {
+    background-color: $lightGreen  !important;
+    opacity: 0.9, 0.8, 0.7;
+}
+
+.boxStyle {
+    width: 100;
+    height: 100;
+    font-size: 1rem;
+}
+
+.addPhotoAlternateOutlinedIcon {
+    font-size: 6rem !important;
+}
+
+.imageOutlinedIcon {
+    font-size: 6rem !important;
+    color: $blue  !important;
+}
+
+.visibilityOutlinedIcon {
+    color: $white  !important;
+}
+
+.avatarBoxStyle {
+    display: flex;
+    align-items: center;
+}
+
+.avatarBoxStyle {
+    margin: 0.2rem;
+    position: relative;
+}
+
+.successAvatar {
+    background-color: $blue  !important;
+}
+
+.deleteAvatar {
+    margin-left: 1rem;
+    background-color: $red !important;
+}
+
+.loadingImage {
+    color: $lightGreen  !important;
+    position: absolute;
+    top: 0 !important;
+    left: 50%;
+    margin-left: -4em;
+    z-index: 1 !important;
+}

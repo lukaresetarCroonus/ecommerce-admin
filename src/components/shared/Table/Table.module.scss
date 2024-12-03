@@ -1,0 +1,30 @@
+.table {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: 1px solid #e0e0e0;
+    tr {
+        &:hover {
+            td {
+                color: var(--main-color);
+            }
+        }
+
+        > th {
+            font-weight: bold;
+            font-size: 0.875rem;
+            background-color: var(--main-bg-color);
+            border-radius: 0;
+            padding: 0.5rem 1rem;
+            border-bottom: 0;
+        }
+
+        > td {
+            padding: 0 1rem;
+            color: var(--dark-silver);
+        }
+
+        &:last-child > td {
+            border-bottom: none;
+        }
+    }
+}

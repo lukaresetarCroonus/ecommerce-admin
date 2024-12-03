@@ -1,0 +1,67 @@
+[
+  {
+    "field_name": "Naziv modula",
+    "prop_name": "name",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "255",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "input"
+  },
+  {
+    "field_name": "Opis",
+    "prop_name": "description",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": false,
+    "description": "255",
+    "ui_prop": "xyz",
+    "sortable": false,
+    "input_type": "input"
+  },
+  {
+    "field_name": "Sistem",
+    "prop_name": "system",
+    "in_main_table": false,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": false,
+    "description": "255",
+    "ui_prop": "xyz",
+    "sortable": false,
+    "input_type": "input"
+  },
+  {
+    "field_name": "Modul",
+    "prop_name": "module",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": false,
+    "description": "255",
+    "ui_prop": "xyz",
+    "sortable": false,
+    "input_type": "input"
+  },
+  {
+    "field_name": "",
+    "prop_name": "action",
+    "in_main_table": true,
+    "in_details": true,
+    "editable": true,
+    "disabled": false,
+    "required": true,
+    "description": "255",
+    "ui_prop": "xyz",
+    "sortable": true,
+    "input_type": "edit"
+  }
+]

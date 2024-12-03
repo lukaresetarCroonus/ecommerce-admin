@@ -1,0 +1,23 @@
+@import "../../../../variables.scss";
+
+.toolbarButtons {
+    background-color: $lightGrey !important;
+    color: $black !important;
+    margin-left: 10px !important;
+    padding: 7px 20px 7px !important;
+    text-transform: none !important;
+}
+
+.formStyle {
+    display: flex !important;
+}
+
+.formControl {
+    margin: 1rem !important;
+}
+
+.toolbarButtons h1 {
+    font-size: 0.8rem !important;
+    text-align: center !important;
+    margin: auto;
+}

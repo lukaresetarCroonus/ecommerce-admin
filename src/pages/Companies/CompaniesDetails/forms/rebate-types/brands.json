@@ -1,0 +1,87 @@
+[
+    {
+        "field_name": "Naziv",
+        "prop_name": "name",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "number"
+    },
+    {
+        "field_name": "Iznos",
+        "prop_name": "discount_value",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "table_cell": {
+                "cell": {
+                    "editable": true,
+                    "render_input": true
+                },
+                "api": {
+                    "api_path": "admin/customers-b2b/rebate-company/brands/",
+                    "method": "GET",
+                    "queryString": null,
+                    "save": {
+                        "api_path": "admin/customers-b2b/rebate-company/brands",
+                        "method": "POST"
+                    }
+                },
+                "cell_behavior": {
+                    "fields": [
+                        {
+                            "field_name": "Iznos popusta",
+                            "prop_name": "discount_value",
+                            "in_main_table": true,
+                            "in_details": true,
+                            "editable": true,
+                            "disabled": false,
+                            "required": false,
+                            "description": "",
+                            "ui_prop": {
+                                "form": {
+                                    "input": {
+                                        "label": false
+                                    }
+                                },
+                                "columns": {
+                                    "xs": 12,
+                                    "sm": 12,
+                                    "md": 12,
+                                    "lg": 12,
+                                    "xl": 12
+                                }
+                            },
+                            "sortable": true,
+                            "input_type": "input"
+                        }
+                    ]
+                }
+            }
+        },
+        "sortable": true,
+        "input_type": "number"
+    },
+    {
+        "field_name": "",
+        "prop_name": "action",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "delete"
+    }
+]

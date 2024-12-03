@@ -1,0 +1,26 @@
+@import "partials/toastify";
+@import "partials/custom";
+@import "partials/table";
+@import "partials/util";
+@import "@nosferatu500/react-sortable-tree/style.css";
+
+.css-wop1k0-MuiDataGrid-footerContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 75px !important;
+    border-top: 1px solid;
+}
+
+.css-1cm824l-MuiDataGrid-root .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)>.MuiDataGrid-cell {
+    overflow: hidden;
+    white-space: normal !important;
+}

@@ -1,0 +1,62 @@
+@import "../../../../../../../variables.scss";
+
+.groupBox {
+    position: relative;
+    border-left: 1px solid rgba($black, 0.2);
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    &:not(:first-child) {
+        margin: 1rem 0;
+        transform: translateX(1rem);
+    }
+    .removeGroup {
+        position: absolute;
+        right: 0;
+        top: -0.2rem;
+        color: var(--light-silver);
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: $danger;
+        }
+    }
+
+    .groupHolder {
+        margin-bottom: 0.8rem;
+        font-size: 0.875rem;
+        span {
+            margin: 0 1rem;
+        }
+    }
+
+    .buttonHolder {
+        display: flex;
+        column-gap: 0.5rem;
+        margin-top: 0.4rem;
+        button {
+            text-transform: inherit;
+            font-size: 0.875rem;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    button {
+        span {
+            font-size: 1.188rem;
+        }
+    }
+}
+
+.inputConditionValue {
+    div {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 0.875rem;
+    }
+    fieldset {
+        border: 0;
+        border-bottom: 1px solid rgba($black, 0.2);
+        border-radius: 0;
+    }
+}

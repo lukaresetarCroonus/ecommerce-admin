@@ -1,0 +1,49 @@
+@import "../../../variables.scss";
+
+.titleStyle {
+  margin: 1.5rem 2rem !important;
+  display: inline-block;
+}
+
+.buttonCreate {
+  right: 1.5rem !important;
+  background-color: $lightGreen !important;
+  color: $white !important;
+  float: right !important;
+  position: relative !important;
+  margin-top: 1.2rem !important;
+  padding: 6px 33px 6px !important;
+  text-transform: none !important;
+  border-radius: 5px;
+}
+
+.buttonCreate:hover {
+  background-color: $lightGrey !important;
+  color: $black !important;
+  cursor: pointer !important;
+}
+
+.buttonAdditional {
+  right: 1.5rem !important;
+  background-color: $lightGrey !important;
+  color: $black !important;
+  float: right !important;
+  position: relative !important;
+  margin-top: 1.2rem !important;
+  padding: 6px 33px 6px !important;
+  text-transform: none !important;
+  border-radius: 5px;
+  margin-right: 10px !important;
+}
+
+.buttonAdditional:hover {
+  background-color: $lightGreen !important;
+  color: $white !important;
+  cursor: pointer !important;
+}
+
+.AddIcon {
+  font-size: 0.8rem !important;
+  margin: auto;
+  margin-right: 2px;
+}

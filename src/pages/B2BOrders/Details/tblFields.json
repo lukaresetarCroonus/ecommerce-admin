@@ -1,0 +1,93 @@
+[
+    {
+        "field_name": "Poruka poslata kupcu",
+        "prop_name": "send_to_customer",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "255",
+        "ui_prop": "xyz",
+        "sortable": false,
+        "input_type": "boolean"
+    },
+    {
+        "field_name": "Poslata predefinisana poruka",
+        "prop_name": "send_default_message",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "255",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "boolean"
+    },
+    {
+        "field_name": "Poslato kupcu",
+        "prop_name": "mail_to_customer",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "255",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Poslato administraciji",
+        "prop_name": "mail_to_admin",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "255",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Naslov",
+        "prop_name": "subject",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "255",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Poruka",
+        "prop_name": "content",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "255",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    },
+    {
+        "field_name": "Status",
+        "prop_name": "status",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": true,
+        "description": "255",
+        "ui_prop": "xyz",
+        "sortable": true,
+        "input_type": "input"
+    }
+]

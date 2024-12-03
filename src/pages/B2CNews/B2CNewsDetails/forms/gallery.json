@@ -1,0 +1,26 @@
+[
+    {
+        "field_name": "Galerija",
+        "prop_name": "gallery",
+        "in_main_table": true,
+        "in_details": true,
+        "editable": true,
+        "disabled": false,
+        "required": false,
+        "description": "",
+        "ui_prop": {
+            "fileUpload": {
+                "fillFromApi": "admin/news-b2c/news/gallery/options/upload",
+                "allow_format": [],
+                "allow_size": "",
+                "image": {
+                    "convert_use": null,
+                    "width": "1920",
+                    "height": "1080"
+                }
+            }
+        },
+        "sortable": true,
+        "input_type": "multiple_images"
+    }
+]

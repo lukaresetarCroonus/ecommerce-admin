@@ -1,0 +1,89 @@
+@import "../../../variables.scss";
+
+.buttonStyle {
+    width: fit-content !important;
+    border-color: #dae1f1 !important;
+    border-width: thin !important;
+    .label {
+        text-transform: lowercase;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+        font-size: 0.875rem;
+        color: #000;
+        margin-left: 0.5rem;
+    }
+}
+
+.buttonStyle:hover {
+    background-color: rgba(40, 168, 110, 1) !important;
+    h6 {
+        color: #ffffff;
+    }
+    .addAPhotoIcon {
+        color: #ffffff;
+    }
+}
+
+.divider {
+    margin: 1rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    &::after,
+    &::before {
+        transform: none !important;
+        border-top: 1px solid #dae1f1 !important;
+    }
+}
+
+.addAPhotoIcon {
+    font-size: 1.6rem !important;
+    color: rgba(0, 0, 0, 0.54);
+    margin-right: 0.5rem;
+}
+
+.formUpload {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.inputUpload {
+    display: none;
+}
+
+.dragPseudoElement {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.labelUpload {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 2px;
+    border-radius: 0.25rem;
+    border-style: dashed;
+    border-color: #dae1f1;
+    background-color: #f8fafc;
+}
+
+.labelUploadActive {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 2px;
+    border-radius: 0.25rem;
+    border-style: dashed;
+    border-color: #28a86e;
+    transition: all 0.2s ease-in-out;
+    background-color: #f8fafc;
+}

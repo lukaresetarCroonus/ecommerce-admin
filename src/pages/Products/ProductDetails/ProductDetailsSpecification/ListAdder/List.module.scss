@@ -1,0 +1,49 @@
+@import "../../../../../variables.scss";
+
+.list {
+  width: 100%;
+}
+
+.buttonsHolder {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.additionalButtonsHolder {
+  display: flex;
+  gap: 10px;
+}
+
+.buttonPrimary {
+  background-color: $lightGreen !important;
+  color: $white !important;
+  margin-top: 1.2rem !important;
+  padding: 6px 10px !important;
+  text-transform: none !important;
+  border-radius: 5px;
+}
+
+.buttonPrimary:hover {
+  background-color: $lightGrey !important;
+  color: $black !important;
+  cursor: pointer !important;
+}
+
+.buttonAdditional {
+  background-color: $lightGrey !important;
+  color: $black !important;
+  margin-top: 1.2rem !important;
+  padding: 6px 10px !important;
+  text-transform: none !important;
+  border-radius: 5px;
+  margin-right: 10px !important;
+}
+
+.buttonAdditional:hover {
+  background-color: $lightGreen !important;
+  color: $white !important;
+  cursor: pointer !important;
+}

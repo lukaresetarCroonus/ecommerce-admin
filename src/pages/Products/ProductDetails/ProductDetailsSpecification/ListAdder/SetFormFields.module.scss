@@ -1,0 +1,40 @@
+@import "../../../../../variables.scss";
+
+.formFieldHeader {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid $lightGrey;
+}
+
+.formFieldTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.deleteButton {
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+    &:hover {
+        color: #28a86e !important;
+    }
+}
+
+.deleteButton:hover {
+    color: $red;
+}
+
+.section {
+    border: 1px solid $lightGrey;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.setField {
+    width: 70%;
+}
